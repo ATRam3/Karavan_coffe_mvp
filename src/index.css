@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-crema-dark;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Mono eyebrow label with leading rule — "01 —— THE STORY" */
+  .eyebrow {
+    @apply flex items-center gap-3 font-mono text-xs font-medium uppercase tracking-[0.2em];
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-10 bg-current opacity-60;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-crema px-6 py-3 text-sm font-semibold text-roast shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-crema-dark hover:shadow-lg active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition duration-300 hover:-translate-y-0.5 hover:border-crema hover:text-crema;
+  }
+}
