@@ -45,7 +45,18 @@ export default function Featured() {
                   <span aria-hidden>0{i + 1}</span>
                 </div>
 
-                <div className="mt-8">
+                {item.image && (
+                  <div className="mt-4 aspect-[16/10] w-full overflow-hidden rounded-xl border border-black/10 shadow-inner">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                )}
+
+                <div className="mt-6">
                   <h3 className="font-display text-2xl font-bold leading-tight sm:text-3xl">
                     {item.name}
                   </h3>

@@ -6,6 +6,7 @@ import { companyInfo } from '../data/mockData';
 const links = [
   { href: '#home', label: 'Home' },
   { href: '#menu', label: 'Menu' },
+  { href: '#catering', label: 'Catering & Events' },
   { href: '#about', label: 'About Us' },
   { href: '#location', label: 'Location' },
   { href: '#contact', label: 'Contact' },

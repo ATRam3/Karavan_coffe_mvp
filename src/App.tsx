@@ -2,10 +2,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Featured from './components/Featured';
 import Menu from './components/Menu';
+import CateringEvents from './components/CateringEvents';
 import About from './components/About';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { assets } from './data/assets';
 
 export default function App() {
   return (
@@ -18,10 +20,11 @@ export default function App() {
       </a>
       <Navbar />
       <main id="main">
-        <Hero />
+        <Hero imageUrl={assets.insideCafe} />
         <Featured />
         <Menu />
-        <About />
+        <CateringEvents />
+        <About imageUrl={assets.goodEnvTables} />
         <Location />
         <Contact />
       </main>

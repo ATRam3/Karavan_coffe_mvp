@@ -92,3 +92,14 @@ export interface ToastState {
   id: number;
   message: string;
 }
+
+export type GalleryCategory = 'all' | 'cakes' | 'catering' | 'ambiance';
+
+export interface GalleryItem {
+  id: string;
+  title: string;
+  category: 'cakes' | 'catering' | 'ambiance';
+  categoryLabel: string;
+  image: string;
+  description: string;
+}

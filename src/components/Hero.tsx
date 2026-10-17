@@ -1,9 +1,9 @@
+import type { LucideIcon } from 'lucide-react';
 import { ArrowDownRight, ArrowUpRight, Coffee, Croissant, Wifi } from 'lucide-react';
-import type { ComponentType } from 'react';
 import { companyInfo, highlights } from '../data/mockData';
 import type { Highlight } from '../types';
 
-const highlightIcons: Record<Highlight['icon'], ComponentType<{ size?: number; 'aria-hidden'?: boolean }>> = {
+const highlightIcons: Record<Highlight['icon'], LucideIcon> = {
   coffee: Coffee,
   croissant: Croissant,
   wifi: Wifi,
@@ -21,13 +21,17 @@ export default function Hero({ imageUrl }: HeroProps) {
       {imageUrl && (
         <img
           src={imageUrl}
-          alt=""
-          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          alt="Inside Karavan Coffee cafe atmosphere"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center brightness-[0.6] contrast-[1.1]"
           fetchPriority="high"
         />
       )}
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_75%_40%,rgba(198,139,89,0.35),transparent_55%),linear-gradient(135deg,#1A1817_0%,#2C1A1D_55%,#3D2314_100%)]"
+        className={`absolute inset-0 -z-10 ${
+          imageUrl
+            ? 'bg-gradient-to-r from-roast-deep via-roast-deep/80 to-roast/50'
+            : 'bg-[radial-gradient(ellipse_at_75%_40%,rgba(198,139,89,0.35),transparent_55%),linear-gradient(135deg,#1A1817_0%,#2C1A1D_55%,#3D2314_100%)]'
+        }`}
         aria-hidden
       />
       {/* Big decorative ring echoing the stamp badge */}

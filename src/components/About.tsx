@@ -1,9 +1,9 @@
+import type { LucideIcon } from 'lucide-react';
 import { Award, Coffee, Sprout, Users } from 'lucide-react';
-import type { ComponentType } from 'react';
 import { valuePillars } from '../data/mockData';
 import type { ValuePillar } from '../types';
 
-const pillarIcons: Record<ValuePillar['icon'], ComponentType<{ size?: number; 'aria-hidden'?: boolean }>> = {
+const pillarIcons: Record<ValuePillar['icon'], LucideIcon> = {
   sprout: Sprout,
   users: Users,
   award: Award,
@@ -57,7 +57,7 @@ export default function About({ imageUrl }: AboutProps) {
           {/* Story */}
           <div>
             <p className="eyebrow text-crema-dark">
-              <span aria-hidden>04</span> About us
+              <span aria-hidden>05</span> About us
             </p>
             <h2 id="about-heading" className="section-title mt-5 text-roast">
               Our journey <span className="text-crema-dark">&amp; sourcing.</span>

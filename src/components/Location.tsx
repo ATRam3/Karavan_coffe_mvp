@@ -12,7 +12,7 @@ export default function Location() {
     <section id="location" aria-labelledby="location-heading" className="bg-cream-warm/60 py-20 sm:py-28">
       <div className="container-page">
         <p className="eyebrow text-crema-dark">
-          <span aria-hidden>05</span> Find us
+          <span aria-hidden>06</span> Find us
         </p>
         <h2 id="location-heading" className="section-title mt-5 text-roast">
           Location <span className="text-crema-dark">&amp; hours.</span>

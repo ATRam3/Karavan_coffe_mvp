@@ -73,7 +73,7 @@ export default function Contact() {
     <section id="contact" aria-labelledby="contact-heading" className="bg-cream py-20 sm:py-28">
       <div className="container-page">
         <p className="eyebrow text-crema-dark">
-          <span aria-hidden>06</span> Say hello
+          <span aria-hidden>07</span> Say hello
         </p>
         <h2 id="contact-heading" className="section-title mt-5 text-roast">
           Get in <span className="text-crema-dark">touch.</span>

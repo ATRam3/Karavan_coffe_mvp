@@ -33,10 +33,13 @@ export default function MenuItemCard({ item, index }: MenuItemCardProps) {
           />
         ) : (
           <div
-            className="flex h-full w-full items-center justify-center text-crema-dark/50"
+            className="flex h-full w-full flex-col items-center justify-center gap-2 text-crema-dark/60"
             aria-hidden
           >
-            <Coffee size={44} strokeWidth={1.25} />
+            <Coffee size={38} strokeWidth={1.25} />
+            <span className="rounded-full bg-cream-warm/80 px-2.5 py-0.5 font-mono text-[9px] uppercase tracking-wider text-roast/60">
+              Sample · Image coming soon
+            </span>
           </div>
         )}
         <span
