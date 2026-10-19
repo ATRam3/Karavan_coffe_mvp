@@ -103,3 +103,24 @@ export interface GalleryItem {
   image: string;
   description: string;
 }
+
+export type BookingType = 'table' | 'catering' | 'private';
+
+export interface BookingFormData {
+  name: string;
+  contact: string;
+  date: string;
+  time: string;
+  partySize: number;
+  bookingType: BookingType;
+  specialRequests: string;
+}
+
+export interface BookingFormErrors {
+  name?: string;
+  contact?: string;
+  date?: string;
+  time?: string;
+  partySize?: string;
+  specialRequests?: string;
+}

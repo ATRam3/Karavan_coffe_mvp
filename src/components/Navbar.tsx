@@ -8,6 +8,7 @@ const links = [
   { href: '#menu', label: 'Menu' },
   { href: '#catering', label: 'Catering & Events' },
   { href: '#about', label: 'About Us' },
+  { href: '#booking', label: 'Book Now' },
   { href: '#location', label: 'Location' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -37,11 +38,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition duration-300 ${
-        scrolled || open
+      className={`fixed inset-x-0 top-0 z-50 transition duration-300 ${scrolled || open
           ? 'bg-roast-deep/95 shadow-lg backdrop-blur'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="container-page flex h-16 items-center justify-between sm:h-20">
         <a

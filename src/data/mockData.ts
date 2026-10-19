@@ -1,4 +1,5 @@
 import type {
+  BookingType,
   BusinessHours,
   Category,
   CompanyInfo,
@@ -116,6 +117,27 @@ export const messageTypeOptions: { value: MessageType; label: string }[] = [
   { value: 'general', label: 'General enquiry' },
   { value: 'catering', label: 'Catering / Private event' },
   { value: 'feedback', label: 'Feedback' },
+];
+
+export const timeSlots: string[] = [
+  '9:00 AM',
+  '10:00 AM',
+  '11:00 AM',
+  '12:00 PM',
+  '1:00 PM',
+  '2:00 PM',
+  '3:00 PM',
+  '4:00 PM',
+  '5:00 PM',
+  '6:00 PM',
+  '7:00 PM',
+  '8:00 PM',
+];
+
+export const bookingTypeOptions: { value: BookingType; label: string }[] = [
+  { value: 'table', label: 'Table Reservation' },
+  { value: 'catering', label: 'Catering Event' },
+  { value: 'private', label: 'Private Event / Coffee Ceremony' },
 ];
 
 export const menuItems: MenuItem[] = [
@@ -561,4 +583,3 @@ export const galleryItems: GalleryItem[] = [
     description: 'Traditional recipe made with authentic highland ingredients.',
   },
 ];
-
