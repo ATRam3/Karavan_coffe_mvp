@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3 text-crema">
-            <Logo className="h-12 w-12" />
+            <Logo className="h-12 w-12 sm:h-14 sm:w-14" />
             <span className="font-display text-xl font-bold text-cream">{companyInfo.name}</span>
           </div>
           <p className="mt-4 max-w-xs text-sm text-cream/60">{companyInfo.tagline}</p>

@@ -50,7 +50,7 @@ export default function Navbar() {
           aria-label="Karavan Coffee — back to top"
           onClick={() => setOpen(false)}
         >
-          <Logo className="h-10 w-10 sm:h-11 sm:w-11" />
+          <Logo className="h-10 w-10 sm:h-12 sm:w-12" />
           <span className="font-display text-xl font-bold tracking-tight text-cream">
             Karavan <span className="text-crema">Coffee</span>
           </span>

@@ -1,7 +1,7 @@
 // Central asset registry for Karavan Coffee images
 
 // Brand Logo
-import logo from '../asset/logo.jpg';
+import logo from '../asset/logo-removebg-preview.png';
 
 // Atmosphere & Interior
 import insideCafe from '../asset/inside the cafe.jpg';

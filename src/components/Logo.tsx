@@ -1,20 +1,20 @@
-import logoImg from '../asset/logo.jpg';
+import logoImg from '../asset/logo-removebg-preview.png';
 
 interface LogoProps {
   className?: string;
   alt?: string;
 }
 
-/** Karavan brand logo from assets */
+/** Karavan brand logo */
 export default function Logo({
-  className = '',
+  className = 'h-10 w-auto sm:h-12',
   alt = 'Karavan Coffee — Layers of Happiness',
 }: LogoProps) {
   return (
     <img
       src={logoImg}
       alt={alt}
-      className={`rounded-full object-contain bg-[#FAF7F2] p-0.5 shadow-sm ring-1 ring-crema/40 ${className}`}
+      className={`object-contain ${className}`}
       loading="eager"
       decoding="async"
     />
