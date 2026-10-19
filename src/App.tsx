@@ -4,6 +4,7 @@ import Featured from './components/Featured';
 import Menu from './components/Menu';
 import CateringEvents from './components/CateringEvents';
 import About from './components/About';
+import Booking from './components/Booking';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ export default function App() {
         <Menu />
         <CateringEvents />
         <About imageUrl={assets.goodEnvTables} />
+        <Booking />
         <Location />
         <Contact />
       </main>
